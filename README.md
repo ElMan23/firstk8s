@@ -6,12 +6,14 @@ My K8S test project with Flask.
 
 Build the application Docker image with 
 ```
-docker build -t eliamanara/flask ./app
+docker build -t eliamanara/flask/arm64:latest ./app
 ```
 and push it to your Docker Registry with
 ```
-docker push eliamanara/flask
+docker push eliamanara/flask/arm64:latest
 ```
+
+To handle versioning a little bit better, use a version tag together with the latest tag.
 
 Modify the `eliamanara` in the `k8s` directory in all configuration files containing it.
 

@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: eliamanara/flask
+          image: eliamanara/flask/arm64:latest
           ports:
             - containerPort: 5000
